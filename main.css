@@ -160,6 +160,7 @@ input[type="text"] {
 }
 
 .btn-answer-incorrect, .btn-answer-incorrect:hover {
+	text-decoration: line-through;
 	border: red 6px solid;
 }
 
