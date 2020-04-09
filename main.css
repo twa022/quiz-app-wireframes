@@ -150,6 +150,25 @@ input[type="text"] {
 	width: 75%;
 }
 
+.answer-reply {
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+.btn-answer-answered, .btn-answer-answered:hover {
+	color: grey;
+}
+
+.btn-answer-incorrect, .btn-answer-incorrect:hover {
+	border: red 6px solid;
+}
+
+.btn-answer-correct, .btn-answer-correct:hover {
+	border: green 6px solid;
+	color: black;
+	background-color: white;
+}
+
 .btn-nav, .btn-quizlist-nav {
 	position: absolute;
 	font-size: 1.8rem;
@@ -203,6 +222,10 @@ button.clear-search {
 
 .end-btn-container > * {
 	margin: 6px;
+}
+
+.btn-next.answered, .btn-next.answered:hover {
+	border: black solid 5px;
 }
 
 .no-display {
