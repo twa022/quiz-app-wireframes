@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Owl Quiz</title>
+		<meta name="description" content="The Ultimate Quiz Site">
+		
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		<!-- Stylesheets -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css">
+		<link href="main.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="background"></div>
+		<div class="outer-container">
+			<div class="inner-container">
+				<div class="left-container">
+					<header class="card card-title card-top">
+						<h1>Owl Quiz</h1>
+					</header>
+					<section class="card card-score">
+						<div class="score-inner-container">
+							<!-- Don't want to wrap the line in the middle of the score 2 / newline 3!-->
+							<div class="inline">Question: <span class="question-number nowrap">1 / 5</span></div>
+							<div class="inline">Score: <span class="score nowrap">0 / 0</span></div>
+						</div>
+					</section>
+					<section class="card card-search no-display">
+						<label for="search-quizzes" class="no-display">Search Quizzes</label>
+						<div class="inline search-quizzes-container">
+							<input type="text" name="search-quizzes" id="search-quizzes" class="search-quizzes" placeholder="Search Quizzes">
+							<button class="clear-search no-display"><i class="fas fa-times-circle"></i></button>
+						</div>
+						<button class="btn btn-inactive btn-quizlist-prev btn-quizlist-nav" disabled><i class="fas fa-chevron-left"></i></button>
+						<button class="btn btn-inactive btn-quizlist-next btn-quizlist-nav" disabled><i class="fas fa-chevron-right"></i></button>
+						<div class="quizlist">
+							<!-- Quiz buttons inserted here! -->
+						</div>
+						<button _idx="random" class="btn btn-quiz btn-random-quiz">Random Quiz</button>
+					</section>
+					<section class="card card-result card-bottom no-display">
+						<p class="result-msg">You did blank!</p>
+						<p class="final-score">Final score: <span class="score">_ / _</span></p>
+						<div class="end-btn-container">
+							<button class="btn btn-active btn-try-again">Try Again</button>
+							<button class="btn btn-active btn-restart">Choose a New Quiz</button>
+						</div>
+					</section>
+					<section class="card card-question">
+						<p class="question">What are baby owls are called?</p>
+					</section>
+				</div>
+				<section class="card card-answers">
+					<div class="answer-list">
+						<button class="btn btn-answer answer btn-answer-incorrect">Owl Chicks</button>
+						<button class="btn btn-answer answer btn-answer-correct">Owlets</button>
+						<button class="btn btn-answer answer btn-answer-answered">Owl Cubs</button>
+						<button class="btn btn-answer answer btn-answer-answered">Owl Pups</button>
+					</div>
+					<button class="btn btn-inactive btn-prev btn-nav"><i class="fas fa-chevron-left"></i></button>
+					<button class="btn btn-inactive btn-next btn-nav answered"><i class="fas fa-chevron-right"></i></button>
+					<div class="answer-reply">
+						<p>No, baby owls are called owlets. (When in doubt always guess the cutest answer)</p>
+					</div>
+				</section>
+			</div>
+		</div>
+		<!-- Call our javascript! -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
