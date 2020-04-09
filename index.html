@@ -1,78 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<title>What Is... Trivia?</title>
-		<meta name="description" content="The Ultimate Quiz Site">
-		
-		<!-- Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-		<!-- Stylesheets -->
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css">
-		<link href="main.css" rel="stylesheet" type="text/css">
-	</head>
-
-	<body>
-		<div class="background"></div>
-		<div class="outer-container">
-			<div class="inner-container">
-				<div class="left-container">
-					<header class="card card-title card-top">
-						<h1>What Is... Trivia?</h1>
-					</header>
-					<section class="card card-score no-display">
-						<div class="score-inner-container">
-							<!-- Don't want to wrap the line in the middle of the score 2 / newline 3!-->
-							<div class="inline">Question: <span class="question-number nowrap">_ / _</span></div>
-							<div class="inline">Score: <span class="score nowrap">0 / 0</span></div>
-						</div>
-					</section>
-					<section class="card card-searcht">
-						<label for="search-quizzes">Search Quizzes</label>
-						<div class="inline search-quizzes-container">
-							<input type="text" name="search-quizzes" id="search-quizzes" class="search-quizzes" placeholder="Search Quizzes">
-							<button class="clear-search no-display"><i class="fas fa-times-circle"></i></button>
-						</div>
-						<button class="btn btn-inactive btn-quizlist-prev btn-quizlist-nav"><i class="fas fa-chevron-left"></i></button>
-						<button class="btn btn-inactive btn-quizlist-next btn-quizlist-nav"><i class="fas fa-chevron-right"></i></button>
-						<div class="quizlist">
-							<button class="btn btn-quiz">Owl Quiz</button>
-							<button class="btn btn-quiz">Planets Quiz</button>
-							<button class="btn btn-quiz">Quiz 3 (to come)</button>
-							<button class="btn btn-quiz">Quiz 4 (to come)</button>
-							<button class="btn btn-quiz">Quiz 5 (to come)</button>
-							<button class="btn btn-quiz">Quiz 6 (to come)</button>
-						</div>
-						<button class="btn btn-quiz btn-random-quiz">Random Quiz</button>
-					</section>
-					<section class="card card-result no-display">
-						<p class="result-msg">You did blank!</p>
-						<p class="final-score">Final score: <span class="score">_ / _</span></p>
-						<div class="end-btn-container">
-							<button class="btn btn-active btn-try-again">Try Again</button>
-							<button class="btn btn-active btn-restart">Choose a New Quiz</button>
-						</div>
-					</section>
-					<section class="card card-question no-display">
-						<!-- Question inserted here by main.js -->
-					</section>
-				</div>
-				<section class="card card-answers no-display">
-					<div class="answer-list">
-						<!-- Answer buttons inserted here by main.js-->
-					</div>
-					<button class="btn btn-inactive btn-prev btn-nav" disabled><i class="fas fa-chevron-left"></i></button>
-					<button class="btn btn-inactive btn-next btn-nav" disabled><i class="fas fa-chevron-right"></i></button>
-					<div class="answer-reply no-display">
-						<!-- Some text about the answer inserted here by main.js-->
-					</div>
-				</section>
-			</div>
-		</div>
-		<!-- Call our javascript! -->
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-		<script src="main.js"></script>
-	</body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz App Wireframe</title>
+	<style>
+		header { text-align: center; }
+		section, header { width: 80%; max-width: 800px; position: relative; left: 50%; transform: translateX(-50%); border: black 1px solid ; margin: 10px; padding: 10px; }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Quiz App</h1>
+	</header>
+	<section>
+		<h2>Thoughts</h2>
+		<p>My goal which is mostly implemented in the main repo is to have the page serve as a trivia app that can dynamically load from a number of quizzes. 
+			I have created questions from the owl and planets quizzes here that will be used to create quizzes that the user can select from on the home page.
+		</p>
+		<p>Since there is no meaningful page interaction or navigation in the wireframes, I have provided links to the various views</p>
+	</section>
+	<section>
+		<h2>Back of Napkin Designs</h2>
+		<ul>
+			<li>Home page: <a href="https://twa022.github.io/quiz-app-wireframes/images/home.jpg">https://twa022.github.io/quiz-app-wireframes/images/home.jpg</a></li>
+			<li>Question page: <a href="https://twa022.github.io/quiz-app-wireframes/images/question.jpg">https://twa022.github.io/quiz-app-wireframes/images/question.jpg</a></li>
+			<li>Correct Answer: <a href="https://twa022.github.io/quiz-app-wireframes/images/correct.jpg">https://twa022.github.io/quiz-app-wireframes/images/correct.jpg</a></li>
+			<li>Question page: <a href="https://twa022.github.io/quiz-app-wireframes/images/incorrect.jpg">https://twa022.github.io/quiz-app-wireframes/images/incorrect.jpg</a></li>
+			<li>End / score page: <a href="https://twa022.github.io/quiz-app-wireframes/images/end.jpg">https://twa022.github.io/quiz-app-wireframes/images/end.jpg</a></li>
+		</ul>
+	</section>
+	<section>
+		<h2>Wireframes</h2>
+		<ul>
+			<li>Home page: <a href="https://twa022.github.io/quiz-app-wireframes/home.html">https://twa022.github.io/quiz-app-wireframes/home.html</a></li>
+			<li>Question page: <a href="https://twa022.github.io/quiz-app-wireframes/question.html">https://twa022.github.io/quiz-app-wireframes/question.html</a></li>
+			<li>Correct Answer: <a href="https://twa022.github.io/quiz-app-wireframes/correct-answer.html">https://twa022.github.io/quiz-app-wireframes/correct-answer.html</a></li>
+			<li>Question page: <a href="https://twa022.github.io/quiz-app-wireframes/incorrect-answer.html">https://twa022.github.io/quiz-app-wireframes/incorrect-answer.html</a></li>
+			<li>End / score page: <a href="https://twa022.github.io/quiz-app-wireframes/end.html">https://twa022.github.io/quiz-app-wireframes/end.html</a></li>
+		</ul>
+	</section>
+	<section>
+	<h2>Assets</h2>
+		<ul>
+			<li>Image Assets (backgrounds for the home page and the two quizzes): <a href="https://github.com/twa022/quiz-app-wireframes/tree/master/assets">https://github.com/twa022/quiz-app-wireframes/tree/master/assets</a></li>
+			<li>Using fonts from:</li>
+				<ul>
+					<li>Source Sans Pro: <a href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap">https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap</a></li>
+					<li>Font Awesome: <a href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">https://use.fontawesome.com/releases/v5.4.1/css/all.css</a></li>
+				</ul>
+		</ul>
+	</section>
+	<section>
+		<h2>Quiz Questions</h2>
+		<h3>Questions are stored in a JSON file. correctAnswer is the index of the correct answer in the answers array.</h3>
+		<ul>
+			<li>Owl Quiz: <a href="https://twa022.github.io/quiz-app-wireframes/questions/owl.json">https://twa022.github.io/quiz-app-wireframes/questions/owl.json</a></li>
+			<li>Planets Quiz: <a href="https://twa022.github.io/quiz-app-wireframes/questions/owl.json">https://twa022.github.io/quiz-app-wireframes/questions/owl.json</a></li>
+		</ul>
+	</section>
+</body>
 </html>
